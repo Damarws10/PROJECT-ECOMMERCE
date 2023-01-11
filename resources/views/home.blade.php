@@ -106,7 +106,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-title">
-                        <h2>Produk Unggulan</h2>
+                        <h2>Produk Sering Dilihat</h2>
                     </div>
                     <div class="featured__controls">
                         <ul>
