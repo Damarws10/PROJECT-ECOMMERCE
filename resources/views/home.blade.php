@@ -65,6 +65,8 @@
 <!-- Categories Section Begin -->
 <section class="categories">
     <div class="container">
+        <div class="section-title">
+            <h2>Barang Diskon</h2>
         <div class="row">
             <div class="categories__slider owl-carousel">
                 <div class="col-lg-3">
@@ -100,7 +102,7 @@
 
     <!-- Produk Unggulan Begin -->
     <section class="featured spad">
-        <div class="container">
+        <div class="container" style="margin: 0 auto; margin-left: 10%;">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-title">
@@ -133,6 +135,8 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 mix vegetables fastfood">
+
+
                     <div class="featured__item">
                         <div class="featured__item__pic set-bg" data-setbg="{{asset('storage/img/featured/feature-2.jpg')}}">
                             <ul class="featured__item__pic__hover">
@@ -256,7 +260,10 @@
 
     <!-- Produk Terbaru Section Begin -->
 <section class="latest-product spad">
-    <div class="container">
+    <div class="container" style="
+    margin: 0 auto;
+    margin-left: 10%;
+">
         <div class="row">
             <div class="col-lg-4 col-md-6">
                 <div class="latest-product__text">

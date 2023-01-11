@@ -111,6 +111,45 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="sidebar__item sidebar__item__color--option">
+                            <h4>Warna</h4>
+                            <div class="sidebar__item__color sidebar__item__color--white">
+                                <label for="white">
+                                    Putih
+                                    <input type="radio" id="white">
+                                </label>
+                            </div>
+                            <div class="sidebar__item__color sidebar__item__color--gray">
+                                <label for="gray">
+                                    Abu-abu
+                                    <input type="radio" id="gray">
+                                </label>
+                            </div>
+                            <div class="sidebar__item__color sidebar__item__color--red">
+                                <label for="red">
+                                    Merah
+                                    <input type="radio" id="red">
+                                </label>
+                            </div>
+                            <div class="sidebar__item__color sidebar__item__color--black">
+                                <label for="black">
+                                    Hitam
+                                    <input type="radio" id="black">
+                                </label>
+                            </div>
+                            <div class="sidebar__item__color sidebar__item__color--blue">
+                                <label for="blue">
+                                    Biru
+                                    <input type="radio" id="blue">
+                                </label>
+                            </div>
+                            <div class="sidebar__item__color sidebar__item__color--green">
+                                <label for="green">
+                                    Hijau
+                                    <input type="radio" id="green">
+                                </label>
+                            </div>
+                        </div>
                         <div class="sidebar__item">
                             <h4>Ukuran Terpopuler</h4>
                             <div class="sidebar__item__size">
@@ -138,6 +177,10 @@
                                 </label>
                             </div>
                         </div>
+                        <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                            Submit
+                        </button>
+                        
                         <div class="sidebar__item">
                             <div class="latest-product__text">
                                 <h4>Produk Terbaru</h4>
@@ -145,7 +188,7 @@
                                     <div class="latest-prdouct__slider__item">
                                         <a href="#" class="latest-product__item">
                                             <div class="latest-product__item__pic">
-                                                <img src="{{asset('storage/img/latest-product/lp-1.jpg')}}" alt="">
+                                                <img id="myImg" src="{{asset('storage/img/latest-product/lp-1.jpg')}}" alt="">
                                             </div>
                                             <div class="latest-product__item__text">
                                                 <h6>Barang 1</h6>
@@ -205,6 +248,42 @@
                         </div>
                     </div>
                 </div>
+
+                <div id="myModal" class="modal">
+
+                    <!-- The Close Button -->
+                    <span class="close">&times;</span>
+                
+                    <!-- Modal Content (The Image) -->
+                    <img class="modal-content" id="img01">
+                
+                    <!-- Modal Caption (Image Text) -->
+                    <div id="caption"></div>
+                </div>
+
+                <script>
+                    // Get the modal
+                    var modal = document.getElementById("myModal");
+                    
+                    // Get the image and insert it inside the modal - use its "alt" text as a caption
+                    var img = document.getElementById("myImg");
+                    var modalImg = document.getElementById("img01");
+                    var captionText = document.getElementById("caption");
+                    img.onclick = function(){
+                    modal.style.display = "block";
+                    modalImg.src = this.src;
+                    captionText.innerHTML = this.alt;
+                    }
+                    
+                    // Get the <span> element that closes the modal
+                    var span = document.getElementsByClassName("close")[0];
+                    
+                    // When the user clicks on <span> (x), close the modal
+                    span.onclick = function() { 
+                    modal.style.display = "none";
+                    }
+                    </script>
+
                 <div class="col-lg-9 col-md-7">
                     <div class="product__discount">
                         <div class="section-title product__discount__title">

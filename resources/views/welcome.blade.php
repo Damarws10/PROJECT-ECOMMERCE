@@ -44,27 +44,34 @@
                 <div class="header__top__right">
                     <div class="humberger__menu__widget">
                     <div class="header__top__right__language">
-                        <a class="d-inline" href="#"><i class="fa fa-user"></i> </a>
+                        <a class="d-inline" href="#"></a>
                         @if (Route::has('login'))
-                        <span class="arrow_carrot-down"></span>
-                        <ul>
-
-                        <li>
+                        
                         @auth
                             <a href="{{ url('/home') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">
                             <i class="fa fa-user"> Home </i></a>
+
+                            @else
+                            <a href="{{ route('login') }}" class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">
+                            <i class="fa fa-user"> Log In </i></a>
+
+                            @if (Route::has('register'))
+                            <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">
+                            <i class="fa fa-sign-out"> Register </i></a>
+
+                        <ul>
+
+                        <li>
+                        
+                            
                         </li>
                         
                         <li>
-                        @else
-                            <a href="{{ route('login') }}" class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">
-                            <i class="fa fa-user"> Log In </i></a>
+                        
                         </li>
 
                         <li>
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">
-                            <i class="fa fa-sign-out"> Register </i></a>
+                        
                         </li>
                         @endif
                         @endauth    
@@ -109,7 +116,6 @@
                     <li><a href="./wishlist"><i class="fa fa-heart"></i> <span>1</span></a></li>
                     <li><a href="./shoping-cart"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
                 </ul>
-                <div class="header__cart__price">Harga: <span>Rp</span></div>
             </div>
         </div>
     </div>
@@ -248,6 +254,8 @@
 <!-- Categories Section Begin -->
 <section class="categories">
     <div class="container">
+        <div class="section-title">
+            <h2>Barang Diskon</h2>
         <div class="row">
             <div class="categories__slider owl-carousel">
                 <div class="col-lg-3">
@@ -283,7 +291,8 @@
 
     <!-- Produk Unggulan Begin -->
     <section class="featured spad">
-        <div class="container">
+        <div class="container" style="
+        margin: 0 auto; margin-left: 10%;">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-title">
@@ -439,9 +448,12 @@
 
     <!-- Produk Terbaru Section Begin -->
 <section class="latest-product spad">
-    <div class="container">
+    <div class="container"style="
+    margin: 0 auto;
+    margin-left: 10%;
+">
         <div class="row">
-            <div class="col-lg-4 col-md-6">
+            <div class="offset-lg-2 col-lg-6 col-md-6">
                 <div class="latest-product__text">
                     <h4>produk terbaru</h4>
                     <div class="latest-product__slider owl-carousel">
@@ -506,7 +518,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6">
+            <!--HIDE<div class="col-lg-4 col-md-6">
                 <div class="latest-product__text">
                     <h4>Produk Tingkat Teratas</h4>
                     <div class="latest-product__slider owl-carousel">
@@ -570,8 +582,8 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
+            </div>-->
+            <!--HIDE<div class="col-lg-4 col-md-6">
                 <div class="latest-product__text">
                     <h4>Review Products</h4>
                     <div class="latest-product__slider owl-carousel">
@@ -635,7 +647,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>-->
         </div>
     </div>
 </section>
@@ -712,12 +724,12 @@
             </div>
             </div>
             <div class="row">
-            <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="col-lg-3 col-md-4 col-sm-4">
                 <div class="footer__about">
                     
                     <ul>
                         <h4>JAKARTA SELATAN</h4>
-                        <li>Alamat : Graha STK Jl. Taman Marga Satwa. Pasar Minggu, Jakarta Selatan 12550</li>
+                        <li>Graha STK Jl. Taman Marga Satwa. Pasar Minggu, Jakarta Selatan 12550</li>
                         <li>No. Telp: (021) - 39703970</li>
                         <li>Email: telemarketing@hsp.net.id</li>
                     </ul>
@@ -725,31 +737,36 @@
                 </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="col-lg-3 col-md-4 col-sm-4">
                 <div class="footer__about">
                 <ul>
                     <h4>JAKARTA TIMUR</h4>
-                    <li>Alamat : Jl. Tanah Merdeka No. 1 RT 010 RW 003 Rambutan Ciracas Jakarta Timur </li>
+                    <li>Jl. Tanah Merdeka No. 1 RT 010 RW 003 Rambutan Ciracas Jakarta Timur </li>
                     <li>No. Telp: (021) - 39703970</li>
                     <li>Email: telemarketing@hsp.net.id</li>
                 </ul>
                 </div>
             </div>
 
-            <div class="col-lg-4 col-md-4 col-sm-4">
+            <div class="col-lg-2 col-md-4 col-sm-4">
                 <div class="footer__widget">
                     <h6>Link terkait</h6>
                     <ul>
-                        <li><a href="#">Tentang Kita</a></li>
                         <li><a href="#">Kebijakan Pribadi</a></li>
-                        <li><a href="#">Peta Situs Kami</a></li>
-                        <li><a href="#">Pelayanan Kami</a></li>
-                        <li><a href="#">Kontak</a></li>
+                        <li><a href="#">Informasi Pengiriman</a></li>
+                        <li><a href="#">Peta Situs</a></li>
+                        <li><a href="#">Testimoni</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-4">
+            <div class="col-lg-4 col-md-12">
                 <div class="footer__widget">
+                    <h6>Bergabunglah dengan Kami Sekarang</h6>
+                    <p>Dapatkan update Email tentang toko terbaru kami dan penawaran khusus.</p>
+                    <form action="#">
+                        <input type="text" placeholder="Enter your mail">
+                        <button type="submit" class="site-btn">Subscribe</button>
+                    </form>
                     <div class="footer__widget__social">
                         <a href="#"><i class="fa fa-facebook"></i></a>
                         <a href="#"><i class="fa fa-instagram"></i></a>
@@ -758,6 +775,7 @@
                     </div>
                 </div>
             </div>
+    
         </div>
         </div>
         <div class="row">

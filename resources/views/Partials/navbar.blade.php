@@ -28,7 +28,6 @@
                     <li><a href="{{ route('wishlist') }}"><i class="fa fa-heart"></i> <span>1</span></a></li>
                     <li><a href="{{ route('shoping-cart') }}"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
                 </ul>
-                <div class="header__cart__price">Harga: <span>Rp</span></div>
             </div>
         </div>
     </div>
