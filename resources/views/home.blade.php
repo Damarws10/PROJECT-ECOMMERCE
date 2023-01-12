@@ -67,198 +67,206 @@
     <div class="container">
         <div class="section-title">
             <h2>Barang Diskon</h2>
+            <div class="row">
+                <div class="categories__slider owl-carousel">
+                    <div class="col-lg-3">
+                        <div class="categories__item set-bg" data-setbg="{{asset('storage/img/categories/cat-1.jpg')}}">
+                            <h5><a href="#">Router</a></h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="categories__item set-bg" data-setbg="{{asset('storage/img/categories/cat-2.jpg')}}">
+                            <h5><a href="#">Wireless card</a></h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="categories__item set-bg" data-setbg="{{asset('storage/img/categories/cat-3.jpg')}}">
+                            <h5><a href="#">Bridge</a></h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="categories__item set-bg" data-setbg="{{asset('storage/img/categories/cat-4.jpg')}}">
+                            <h5><a href="#">Access Point</a></h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="categories__item set-bg" data-setbg="{{asset('storage/img/categories/cat-5.jpg')}}">
+                            <h5><a href="#">Konektor RJ</a></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+<!-- Categories Section End -->
+
+<!-- Produk Unggulan Begin -->
+<section class="featured spad">
+    <div class="container" style="margin: 0 auto; margin-left: 10%;">
         <div class="row">
-            <div class="categories__slider owl-carousel">
-                <div class="col-lg-3">
-                    <div class="categories__item set-bg" data-setbg="{{asset('storage/img/categories/cat-1.jpg')}}">
-                        <h5><a href="#">Router</a></h5>
+            <div class="col-lg-12">
+                <div class="section-title">
+                    <h2>Produk Terlaris</h2>
+                </div>
+                <div class="featured__controls">
+                    <ul>
+                        <li class="active" data-filter="*">Semua</li>
+                        <li data-filter=".oranges">Router</li>
+                        <li data-filter=".fresh-meat">Bridge</li>
+                        <li data-filter=".vegetables">LAN Card</li>
+                        <li data-filter=".fastfood">Access Point</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row featured__filter">
+            <div class="col-lg-3 col-md-4 col-sm-6 mix oranges fresh-meat">
+                <div class="featured__item">
+                    <div class="featured__item__pic set-bg"
+                        data-setbg="{{asset('storage/img/featured/feature-1.jpg')}}">
+                        <ul class="featured__item__pic__hover">
+                            <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                            <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="featured__item__text">
+                        <h6><a href="#">Router</a></h6>
+                        <h5>Rp.150.000,-</h5>
                     </div>
                 </div>
-                <div class="col-lg-3">
-                    <div class="categories__item set-bg" data-setbg="{{asset('storage/img/categories/cat-2.jpg')}}">
-                        <h5><a href="#">Wireless card</a></h5>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 mix vegetables fastfood">
+
+
+                <div class="featured__item">
+                    <div class="featured__item__pic set-bg"
+                        data-setbg="{{asset('storage/img/featured/feature-2.jpg')}}">
+                        <ul class="featured__item__pic__hover">
+                            <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                            <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="featured__item__text">
+                        <h6><a href="#">Wireless Card</a></h6>
+                        <h5>Rp.300.000,-</h5>
                     </div>
                 </div>
-                <div class="col-lg-3">
-                    <div class="categories__item set-bg" data-setbg="{{asset('storage/img/categories/cat-3.jpg')}}">
-                        <h5><a href="#">Bridge</a></h5>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 mix vegetables fresh-meat">
+                <div class="featured__item">
+                    <div class="featured__item__pic set-bg"
+                        data-setbg="{{asset('storage/img/featured/feature-3.jpg')}}">
+                        <ul class="featured__item__pic__hover">
+                            <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                            <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="featured__item__text">
+                        <h6><a href="#">LAN Card</a></h6>
+                        <h5>Rp. 100.000,-</h5>
                     </div>
                 </div>
-                <div class="col-lg-3">
-                    <div class="categories__item set-bg" data-setbg="{{asset('storage/img/categories/cat-4.jpg')}}">
-                        <h5><a href="#">Access Point</a></h5>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 mix fastfood oranges">
+                <div class="featured__item">
+                    <div class="featured__item__pic set-bg"
+                        data-setbg="{{asset('storage/img/featured/feature-4.jpg')}}">
+                        <ul class="featured__item__pic__hover">
+                            <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                            <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="featured__item__text">
+                        <h6><a href="#">Bridge</a></h6>
+                        <h5>Rp. 270.000,-</h5>
                     </div>
                 </div>
-                <div class="col-lg-3">
-                    <div class="categories__item set-bg" data-setbg="{{asset('storage/img/categories/cat-5.jpg')}}">
-                        <h5><a href="#">Konektor RJ</a></h5>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 mix fresh-meat vegetables">
+                <div class="featured__item">
+                    <div class="featured__item__pic set-bg"
+                        data-setbg="{{asset('storage/img/featured/feature-5.jpg')}}">
+                        <ul class="featured__item__pic__hover">
+                            <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                            <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="featured__item__text">
+                        <h6><a href="#">HUB</a></h6>
+                        <h5>Rp. 100.000,-</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 mix oranges fastfood">
+                <div class="featured__item">
+                    <div class="featured__item__pic set-bg"
+                        data-setbg="{{asset('storage/img/featured/feature-6.jpg')}}">
+                        <ul class="featured__item__pic__hover">
+                            <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                            <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="featured__item__text">
+                        <h6><a href="#">Switch</a></h6>
+                        <h5>Rp.120.000,-</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 mix fresh-meat vegetables">
+                <div class="featured__item">
+                    <div class="featured__item__pic set-bg"
+                        data-setbg="{{asset('storage/img/featured/feature-7.jpg')}}">
+                        <ul class="featured__item__pic__hover">
+                            <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                            <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="featured__item__text">
+                        <h6><a href="#">Access Point</a></h6>
+                        <h5>Rp.200.000,-</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 mix fastfood vegetables">
+                <div class="featured__item">
+                    <div class="featured__item__pic set-bg"
+                        data-setbg="{{asset('storage/img/featured/feature-8.jpg')}}">
+                        <ul class="featured__item__pic__hover">
+                            <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                            <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="featured__item__text">
+                        <h6><a href="#">Kabel LAN</a></h6>
+                        <h5>Rp.200.000,-</h5>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<!-- Categories Section End -->
+<!-- Produk Unggulan End -->
 
-    <!-- Produk Unggulan Begin -->
-    <section class="featured spad">
-        <div class="container" style="margin: 0 auto; margin-left: 10%;">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title">
-                        <h2>Produk Sering Dilihat</h2>
-                    </div>
-                    <div class="featured__controls">
-                        <ul>
-                            <li class="active" data-filter="*">Semua</li>
-                            <li data-filter=".oranges">Router</li>
-                            <li data-filter=".fresh-meat">Bridge</li>
-                            <li data-filter=".vegetables">LAN Card</li>
-                            <li data-filter=".fastfood">Access Point</li>
-                        </ul>
-                    </div>
+<!-- Banner Begin -->
+<div class="banner">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="banner__pic">
+                    <img src="{{asset('storage/img/banner/banner-1.jpg')}}" alt="">
                 </div>
             </div>
-            <div class="row featured__filter">
-                <div class="col-lg-3 col-md-4 col-sm-6 mix oranges fresh-meat">
-                    <div class="featured__item">
-                        <div class="featured__item__pic set-bg" data-setbg="{{asset('storage/img/featured/feature-1.jpg')}}">
-                            <ul class="featured__item__pic__hover">
-                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
-                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-                            </ul>
-                        </div>
-                        <div class="featured__item__text">
-                            <h6><a href="#">Router</a></h6>
-                            <h5>Rp.150.000,-</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mix vegetables fastfood">
-
-
-                    <div class="featured__item">
-                        <div class="featured__item__pic set-bg" data-setbg="{{asset('storage/img/featured/feature-2.jpg')}}">
-                            <ul class="featured__item__pic__hover">
-                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
-                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-                            </ul>
-                        </div>
-                        <div class="featured__item__text">
-                            <h6><a href="#">Wireless Card</a></h6>
-                            <h5>Rp.300.000,-</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mix vegetables fresh-meat">
-                    <div class="featured__item">
-                        <div class="featured__item__pic set-bg" data-setbg="{{asset('storage/img/featured/feature-3.jpg')}}">
-                            <ul class="featured__item__pic__hover">
-                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
-                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-                            </ul>
-                        </div>
-                        <div class="featured__item__text">
-                            <h6><a href="#">LAN Card</a></h6>
-                            <h5>Rp. 100.000,-</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mix fastfood oranges">
-                    <div class="featured__item">
-                        <div class="featured__item__pic set-bg" data-setbg="{{asset('storage/img/featured/feature-4.jpg')}}">
-                            <ul class="featured__item__pic__hover">
-                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
-                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-                            </ul>
-                        </div>
-                        <div class="featured__item__text">
-                            <h6><a href="#">Bridge</a></h6>
-                            <h5>Rp. 270.000,-</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mix fresh-meat vegetables">
-                    <div class="featured__item">
-                        <div class="featured__item__pic set-bg" data-setbg="{{asset('storage/img/featured/feature-5.jpg')}}">
-                            <ul class="featured__item__pic__hover">
-                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
-                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-                            </ul>
-                        </div>
-                        <div class="featured__item__text">
-                            <h6><a href="#">HUB</a></h6>
-                            <h5>Rp. 100.000,-</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mix oranges fastfood">
-                    <div class="featured__item">
-                        <div class="featured__item__pic set-bg" data-setbg="{{asset('storage/img/featured/feature-6.jpg')}}">
-                            <ul class="featured__item__pic__hover">
-                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
-                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-                            </ul>
-                        </div>
-                        <div class="featured__item__text">
-                            <h6><a href="#">Switch</a></h6>
-                            <h5>Rp.120.000,-</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mix fresh-meat vegetables">
-                    <div class="featured__item">
-                        <div class="featured__item__pic set-bg" data-setbg="{{asset('storage/img/featured/feature-7.jpg')}}">
-                            <ul class="featured__item__pic__hover">
-                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
-                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-                            </ul>
-                        </div>
-                        <div class="featured__item__text">
-                            <h6><a href="#">Access Point</a></h6>
-                            <h5>Rp.200.000,-</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mix fastfood vegetables">
-                    <div class="featured__item">
-                        <div class="featured__item__pic set-bg" data-setbg="{{asset('storage/img/featured/feature-8.jpg')}}">
-                            <ul class="featured__item__pic__hover">
-                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
-                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-                            </ul>
-                        </div>
-                        <div class="featured__item__text">
-                            <h6><a href="#">Kabel LAN</a></h6>
-                            <h5>Rp.200.000,-</h5>
-                        </div>
-                    </div>
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="banner__pic">
+                    <img src="{{asset('storage/img/banner/banner-2.jpg')}}" alt="">
                 </div>
             </div>
         </div>
-    </section>
-    <!-- Produk Unggulan End -->
+    </div>
+</div>
+<!-- Banner End -->
 
-    <!-- Banner Begin -->
-        <div class="banner">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-6">
-                        <div class="banner__pic">
-                            <img src="{{asset('storage/img/banner/banner-1.jpg')}}" alt="">
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6">
-                        <div class="banner__pic">
-                            <img src="{{asset('storage/img/banner/banner-2.jpg')}}" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    <!-- Banner End -->
-
-    <!-- Produk Terbaru Section Begin -->
+<!-- Produk Terbaru Section Begin -->
 <section class="latest-product spad">
     <div class="container" style="
     margin: 0 auto;
@@ -486,8 +494,11 @@
                             <li><i class="fa fa-calendar-o"></i> Jakarta, 05/08/2022</li>
                             <li><i class="fa fa-comment-o"></i> 5</li>
                         </ul>
-                        <h5><a href="#">Kerjasama Infrastruktur Telekomunikasi & Multimedia Di Modernland Industrial Estate</a></h5>
-                        <p>Hari ini PT Parsaoran Global Datatrans (PT PGD) dengan PT Modernland Industrial Estat (MIE) melakukan penandatangan perjanjian kerjasama Penyediaan Infrastruktur Telekomunikasi dan Multimedia untuk di kawasan industri Modernland Cikande</p>
+                        <h5><a href="#">Kerjasama Infrastruktur Telekomunikasi & Multimedia Di Modernland Industrial
+                                Estate</a></h5>
+                        <p>Hari ini PT Parsaoran Global Datatrans (PT PGD) dengan PT Modernland Industrial Estat (MIE)
+                            melakukan penandatangan perjanjian kerjasama Penyediaan Infrastruktur Telekomunikasi dan
+                            Multimedia untuk di kawasan industri Modernland Cikande</p>
                     </div>
                 </div>
             </div>
@@ -502,7 +513,9 @@
                             <li><i class="fa fa-comment-o"></i> 5</li>
                         </ul>
                         <h5><a href="#">Kolaborasi HSP & Plaza Asia Tasikmalaya</a></h5>
-                        <p>Akhir Oktober lalu (25/10/2022) PT Parsaoran Global Datatrans (HSP) melakukan penandatangan kerjasama dengan PT Asia Sanprima Jaya (Mall Plaza Asia)Tasikmalaya untuk layanan Internet Broadband & Dedicated di kawasan Mall Plaza Asia. </p>
+                        <p>Akhir Oktober lalu (25/10/2022) PT Parsaoran Global Datatrans (HSP) melakukan penandatangan
+                            kerjasama dengan PT Asia Sanprima Jaya (Mall Plaza Asia)Tasikmalaya untuk layanan Internet
+                            Broadband & Dedicated di kawasan Mall Plaza Asia. </p>
                     </div>
                 </div>
             </div>
@@ -517,7 +530,8 @@
                             <li><i class="fa fa-comment-o"></i> 5</li>
                         </ul>
                         <h5><a href="#">Employee Gathering 2022 & HUT HSP KE-12</a></h5>
-                        <p>Di tahun ini keluarga besar HSP dan Jujung berkesempatan kembali menyelenggarakan acara Employee Gathering pada 25 hingga 27 Agustus 2022 berlokasi di kota Yogyakarta. </p>
+                        <p>Di tahun ini keluarga besar HSP dan Jujung berkesempatan kembali menyelenggarakan acara
+                            Employee Gathering pada 25 hingga 27 Agustus 2022 berlokasi di kota Yogyakarta. </p>
                     </div>
                 </div>
             </div>
