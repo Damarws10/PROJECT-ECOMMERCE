@@ -44,7 +44,7 @@
                         </div>
                         <div class="hero__search__phone__text">
                             <h5>0812-2222-7754</h5>
-                            <span>support 24/7 time</span>
+                            <span>support 24/7</span>
                         </div>
                     </div>
                 </div>
