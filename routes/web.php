@@ -14,9 +14,13 @@ use App\Http\Controllers\HomeController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
 
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// Route::get('/login', [App\Http\Controllers\HomeController::class, 'login'])->name('login');
+
+Auth::routes();
 
 Route::get('/blog', [HomeController::class, 'blog'])->name('blog');
 Route::get('/companyprofile', [HomeController::class, 'companyprofile'])->name('companyprofile');
@@ -27,6 +31,4 @@ Route::get('/shop-grid', [HomeController::class, 'shopgrid'])->name('shop-grid')
 Route::get('/shoping-cart', [HomeController::class, 'shopingcart'])->name('shoping-cart');
 Route::get('/wishlist', [HomeController::class, 'wishlist'])->name('wishlist');
 
-Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

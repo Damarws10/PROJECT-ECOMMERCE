@@ -26,7 +26,13 @@ class HomeController extends Controller
     {
         return view('home');
 
-    }
+    } 
+
+    // public function login()
+    // {
+    //     return view('auth.login');
+
+    // }
 
     public function blog()
     {

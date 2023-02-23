@@ -52,30 +52,14 @@
                             <i class="fa fa-user"> Home </i></a>
 
                             @else
-                            <a href="{{ route('login') }}" class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">
+                            <a href="{{ route('login') }}" class="ml-4 text-secondary">
                             <i class="fa fa-user"> Log In </i></a>
 
                             @if (Route::has('register'))
-                            <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">
+                            <a href="{{ route('register') }}" class="ml-4 text-secondary">
                             <i class="fa fa-sign-out"> Register </i></a>
-
-                        <ul>
-
-                        <li>
-                        
-                            
-                        </li>
-                        
-                        <li>
-                        
-                        </li>
-
-                        <li>
-                        
-                        </li>
-                        @endif
+                            @endif
                         @endauth    
-                        </ul>
                         @endif
                     </div>
                     </div>
