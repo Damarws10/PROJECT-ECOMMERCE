@@ -22,13 +22,21 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Auth::routes();
 
+/*------------------------------------------
+--------------------------------------------
+All Normal Users Routes List
+--------------------------------------------
+--------------------------------------------*/
+Route::middleware(['auth', 'checkRole:user'])->group(function () {
+	Route::get('/checkout', [HomeController::class, 'checkout'])->name('checkout');   
+	Route::get('/wishlist', [HomeController::class, 'wishlist'])->name('wishlist');
+	Route::get('/shoping-cart', [HomeController::class, 'shopingcart'])->name('shoping-cart');
+	Route::get('/shop-details', [HomeController::class, 'shopdetails'])->name('shop-details');   
+});
+
 Route::get('/blog', [HomeController::class, 'blog'])->name('blog');
 Route::get('/companyprofile', [HomeController::class, 'companyprofile'])->name('companyprofile');
-Route::get('/checkout', [HomeController::class, 'checkout'])->name('checkout');
 Route::get('/contact', [HomeController::class, 'contact'])->name('contact');
-Route::get('/shop-details', [HomeController::class, 'shopdetails'])->name('shop-details');
 Route::get('/shop-grid', [HomeController::class, 'shopgrid'])->name('shop-grid');
-Route::get('/shoping-cart', [HomeController::class, 'shopingcart'])->name('shoping-cart');
-Route::get('/wishlist', [HomeController::class, 'wishlist'])->name('wishlist');
 
 
