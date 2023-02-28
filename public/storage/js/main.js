@@ -106,13 +106,13 @@
     $(".latest-product__slider").owlCarousel({
         loop: true,
         margin: 0,
-        items: 1,
+        items: 4,
         dots: false,
         nav: true,
         navText: ["<span class='fa fa-angle-left'><span/>", "<span class='fa fa-angle-right'><span/>"],
-        smartSpeed: 1200,
+        smartSpeed: 1800,
         autoHeight: false,
-        autoplay: true
+        autoplay: true,
     });
 
     /*-----------------------------

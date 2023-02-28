@@ -16,7 +16,7 @@
                         @if (Route::has('login'))
                         
                         @auth
-                            <div><i class="fa fa-user">{{ auth()->user()->name }}</i></div>
+                            <div><i class="fa fa-user"> {{ auth()->user()->name }} </i></div>
                             <a href="#" onclick="event.preventDefault();document.getElementById('logout-form').submit()">
                             <i class="fa fa-sign-out text-secondary"> Logout </i></a>
                             <form action="{{ route('logout') }}" id="logout-form" method="post">
