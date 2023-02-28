@@ -14,16 +14,11 @@ class CheckRole
      * @param  \Closure(\Illuminate\Http\Request): (\Illuminate\Http\Response|\Illuminate\Http\RedirectResponse)  $next
      * @return \Illuminate\Http\Response|\Illuminate\Http\RedirectResponse
      */
-    public function handle(Request $request, Closure $next)
+    public function handle(Request $request, Closure $next, $userType)
     {
-        $roles = array_slice(func_get_args(), 2);
-
-        foreach ($roles as $role) { 
-            $user = \Auth::user()->role;
-        if( $user == $role){
+        if(auth()->user()->role == $userType){
             return $next($request);
         }
-    }
-    return redirect('/');
+        return redirect('/');
     }
 }
