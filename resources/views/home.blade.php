@@ -273,7 +273,7 @@
     margin-left: 10%;
 ">
         <div class="row">
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-12 col-md-2">
                 <div class="latest-product__text">
                     <h4>produk terbaru</h4>
                     <div class="latest-product__slider owl-carousel">
@@ -287,6 +287,7 @@
                                     <span>Rp. 150.000</span>
                                 </div>
                             </a>
+
                             <a href="#" class="latest-product__item">
                                 <div class="latest-product__item__pic">
                                     <img src="{{asset('storage/img/latest-product/lp-2.jpg')}}" alt="">
@@ -296,6 +297,7 @@
                                     <span> Rp.100.000</span>
                                 </div>
                             </a>
+
                             <a href="#" class="latest-product__item">
                                 <div class="latest-product__item__pic">
                                     <img src="{{asset('storage/img/latest-product/lp-3.jpg')}}" alt="">
@@ -316,6 +318,7 @@
                                     <span>Rp. 150.000</span>
                                 </div>
                             </a>
+
                             <a href="#" class="latest-product__item">
                                 <div class="latest-product__item__pic">
                                     <img src="{{asset('storage/img/latest-product/lp-2.jpg')}}" alt="">
@@ -325,6 +328,7 @@
                                     <span> Rp.100.000</span>
                                 </div>
                             </a>
+
                             <a href="#" class="latest-product__item">
                                 <div class="latest-product__item__pic">
                                     <img src="{{asset('storage/img/latest-product/lp-3.jpg')}}" alt="">
@@ -338,7 +342,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6">
+            <!-- <div class="col-lg-4 col-md-6">
                 <div class="latest-product__text">
                     <h4>Produk Tingkat Teratas</h4>
                     <div class="latest-product__slider owl-carousel">
@@ -402,8 +406,8 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
+            </div> -->
+            <!-- <div class="col-lg-4 col-md-6">
                 <div class="latest-product__text">
                     <h4>Review Products</h4>
                     <div class="latest-product__slider owl-carousel">
@@ -467,7 +471,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 </section>
