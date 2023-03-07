@@ -1,10 +1,6 @@
 @extends('layouts.admin')
 @section('content')
-                <!-- Start Content-->
-                <div class="content-page">
-                    <div class="content">
-                        <!-- start page title -->
-                        <div class="row">
+<div class="row">
                             <div class="col-12">
                                 <div class="page-title-box">
                                     <div class="page-title-right">
@@ -17,10 +13,10 @@
                                     <h4 class="page-title">Products</h4>
                                 </div>
                             </div>
-                        </div>     
+</div>     
                         <!-- end page title --> 
 
-                        <div class="row">
+<div class="row">
                             <div class="col-12">
                                 <div class="card">
                                     <div class="card-body">
@@ -442,14 +438,8 @@
                                     </div> <!-- end card-body-->
                                 </div> <!-- end card-->
                             </div> <!-- end col -->
-                        </div>
+</div>
                         <!-- end row -->        
-                        
-                    </div> <!-- container -->
-
-                </div> <!-- content -->
-            </div> 
-        </div>
 @endsection
 
 

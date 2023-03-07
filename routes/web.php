@@ -35,6 +35,7 @@ Route::middleware(['auth', 'checkRole:admin'])->group(function () {
 	Route::get('/edit', [DashboardController::class, 'editproduct'])->name('editsproduct');
 	Route::get('/profile', [DashboardController::class, 'profileadmin'])->name('profileadmin');
 	Route::get('/customer', [DashboardController::class, 'customers'])->name('customers');
+
 });
 
 Route::middleware(['auth', 'checkRole:user'])->group(function () {
