@@ -29,21 +29,30 @@
         <!-- third party css end -->
         
     </head>
-    <body class="hold-transition sidebar-mini layout-fixed">
+    <body class="hold-transition sidebar-mini layout-fixed loading" data-layout-config='{"leftSideBarTheme":"dark","layoutBoxed":false, "leftSidebarCondensed":false, "leftSidebarScrollable":false,"darkMode":false, "showRightSidebarOnStart": true}'>
         <div class="wrapper">
+            <!-- Untuk navbar side left -->
+            <div class="leftside-menu">
+                @include('Partials.PartialAdmin.navbar')
+            </div>
 
-        @include('Partials.PartialAdmin.navbar')
-        @include('Partials.PartialAdmin.topbar')
+            <div class="content-page">
+                <!-- untuk top navbar -->
+                <div class="content">
+                    @include('Partials.PartialAdmin.topbar')
+                    <!-- isi dari konten -->
+                    <div class="container-fluid">
+                        @yield('content')
+                    </div>
+                </div>
+                <!-- footer navbar -->
+                <footer>
+                    @include('Partials.PartialAdmin.footer')
+                </footer>
+            </div>
+        </div>
+        <!-- pengaturan di samping kanan -->
         @include('Partials.PartialAdmin.rightsidebar')
-
-        <div class="content-wrapper">
-        
-        <!-- Main content -->
-        @yield('content')
-        <!-- /.content -->
-
-        <!-- footer -->
-        @include('Partials.PartialAdmin.footer')
 
 
         <!-- bundle -->

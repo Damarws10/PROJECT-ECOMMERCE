@@ -1,6 +1,4 @@
-    <div class="content">
-         <!-- Topbar Start -->
-                    <div class="navbar-custom">
+<div class="navbar-custom">
                         <ul class="list-unstyled topbar-menu float-end mb-0">
                             <li class="dropdown notification-list d-lg-none">
                                 <a class="nav-link dropdown-toggle arrow-none" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
@@ -308,10 +306,6 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div> <!-- content -->
-            </div>
-        </div>
-        <!-- content -->      
- <!-- end Topbar -->
+</div>
+
                      
